@@ -1,5 +1,7 @@
-<div class="container">
-  <h1 @click="getInfo">\{{ title }}</h1>
-  <hello></hello>
-  <div id="spin" class="spin hidden"></div>
-</div>
+<h1>Welcome To <em>\{{ path | parsePath }}</em></h1>
+<nav>
+  <a class="nav-hello" v-link="{ path: '/hello' }">Hello</a>
+  <a class="nav-bye" v-link="{ path: '/bye' }">Bye</a>
+</nav>
+<router-view></router-view>
+<div id="spin" class="spin hidden"></div>

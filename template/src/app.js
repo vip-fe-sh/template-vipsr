@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
+import { sync } from 'vuex-router-sync';
 import store from './vuex/store';
-import {addClass} from './utils/filters';
+import router from './router/index';
+import { addClass, parsePath } from './utils/filters';
 import App from './components/App';
 
 require('./styles/app.scss');
@@ -17,12 +19,8 @@ Vue.use(VueResource);
 
 // add vue filter
 Vue.filter('addClass', addClass);
+Vue.filter('parsePath', parsePath);
 
-/* eslint-disable no-new */
-new Vue({
-  store,
-  el: 'body',
-  components: {
-    'app': App
-  }
-});
+sync(store, router);
+
+router.start(App, '#app');

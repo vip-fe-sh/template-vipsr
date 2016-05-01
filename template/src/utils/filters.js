@@ -10,6 +10,19 @@ let addClass = (item) => {
   }
 };
 
+// parse path
+let parsePath = (item) => {
+  switch (item) {
+    case '/':
+      return 'Home';
+    case '/hello':
+      return 'Hello';
+    case '/bye':
+      return 'Bye';
+  }
+};
+
 module.exports = {
-  addClass: addClass
+  addClass: addClass,
+  parsePath: parsePath
 };

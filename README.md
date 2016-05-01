@@ -1,6 +1,6 @@
 # vip-vue-webpack-boilerplate
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, css extraction, vue-resource & vuex, extended from [vue-template](https://github.com/vuejs-templates/webpack)
+> A full-featured Webpack setup with hot-reload, lint-on-save, css extraction, vue-resource, vuex & vue-router, extended from [vue-template](https://github.com/vuejs-templates/webpack)
 
 ### Before You Start...
 
@@ -35,11 +35,15 @@ $ npm run dev
 │   │   │   ├── index.html    # component template
 │   │   │   └── index.js      # component script
 │   │   └── ...
+│   ├── vuex                  # vuex
+│   │   └── ...
+│   ├── router                # router
+│   │   └── ...
 │   ├── styles                # app styles
 │   │   └── ...
-│   ├── utils                 # utils function
-│   │   └── ...
-├── lib                       # pure static assets (directly copied)
+│   └── utils                 # utils function
+│       └── ...
+├── static                    # pure static assets (directly copied)
 ├── dist                      # built files ready for deploy
 ├── demo
 │   ├── mock                  # mock data

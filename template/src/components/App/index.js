@@ -1,16 +1,13 @@
 import Vue from 'vue';
-import Hello from '../Hello/';
-import * as actions from '../../vuex/actions';
+import store from '../../vuex/store';
 
 export default Vue.extend({
+  store,
   template: require('./index.html'),
-  components: {
-    'hello': Hello
-  },
+  replace: false,
   vuex: {
     getters: {
-      title: state => state.title
-    },
-    actions: actions
+      path: state => state.route.path
+    }
   }
 });
