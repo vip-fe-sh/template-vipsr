@@ -9,21 +9,17 @@
       "type": "string",
       "required": true,
       "label": "Project version",
-      "default": "0.1.0"
+      "default": "1.0.0"
     },
     "description": {
       "type": "string",
       "required": false,
       "label": "Project description",
-      "default": "A VIPS project"
+      "default": "A VIPS Vue.js project"
     },
     "author": {
       "type": "string",
       "label": "Author"
-    },
-    "private": {
-      "type": "boolean",
-      "default": true
     }
   }
 }

@@ -5,6 +5,7 @@ import mutations from './mutations';
 Vue.use(Vuex);
 
 const state = {
+  title: 'Welcome To',
   info: []
 };
 

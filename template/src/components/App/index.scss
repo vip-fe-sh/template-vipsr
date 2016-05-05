@@ -1,0 +1,50 @@
+#app {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  margin: -200px auto 0;
+  text-align: center;
+  h1 {
+    font-size: 60px;
+    color: $baseColor;
+    em {
+      background-color: $baseColor;
+      color: $colorWhite;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+  }
+  nav {
+    font-size: 36px;
+    line-height: 100px;
+    a {
+      padding: 0 10px;
+      &:hover {
+        color: $colorWhite;
+        border-radius: 5px;
+      }
+    }
+    .nav-home {
+      color: $colorRoman;
+      &:hover {
+        background-color: $colorRoman;
+      }
+    }
+    .nav-hello {
+      color: $colorNova;
+      &:hover {
+        background-color: $colorNova;
+      }
+    }
+    .nav-bye {
+      color: $colorPurple;
+      &:hover {
+        background-color: $colorPurple;
+      }
+    }
+    .v-link-active {
+      text-decoration: underline;
+    }
+  }
+}

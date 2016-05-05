@@ -6,58 +6,19 @@
   display: none;
 }
 .font-red {
-  color: $fontRed;
+  color: $colorRed;
 }
 .font-yellow {
-  color: $fontYellow;
+  color: $colorYellow;
 }
 .font-blue {
-  color: $fontBlue;
+  color: $colorBlue;
 }
 
 // components
-#app {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 50%;
-  margin: -200px auto 0;
-  text-align: center;
-  font-size: 24px;
-  color: $baseColor;
-  h1 {
-    font-size: 60px;
-    em {
-      background-color: $baseColor;
-      color: $fontWhite;
-      border-radius: 10px;
-      padding: 0 10px;
-    }
-  }
-  nav {
-    font-size: 36px;
-    line-height: 100px;
-    .nav-hello {
-      color: $extColor1;
-      margin-right: 10px;
-      &:hover {
-        background-color: $extColor1;
-        color: $fontWhite;
-      }
-    }
-    .nav-bye {
-      color: $extColor2;
-      margin-left: 10px;
-      &:hover {
-        background-color: $extColor2;
-        color: $fontWhite;
-      }
-    }
-    .v-link-active {
-      text-decoration: underline;
-    }
-  }
-}
+@import "../components/App/index.scss";
+@import "../components/Hello/index.scss";
+@import "../components/Bye/index.scss";
 
 // utils
 .spin {

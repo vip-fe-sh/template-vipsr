@@ -23,6 +23,6 @@ let parsePath = (item) => {
 };
 
 module.exports = {
-  addClass: addClass,
-  parsePath: parsePath
+  addClass,
+  parsePath
 };

@@ -1,8 +1,8 @@
 import Vue from 'vue';
-import VueResource from 'vue-resource';
-import { sync } from 'vuex-router-sync';
 import store from './vuex/store';
 import router from './router/index';
+import VueResource from 'vue-resource';
+import { sync } from 'vuex-router-sync';
 import { addClass, parsePath } from './utils/filters';
 import App from './components/App';
 
