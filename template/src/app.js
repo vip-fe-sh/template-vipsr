@@ -23,4 +23,4 @@ Vue.filter('parsePath', parsePath);
 
 sync(store, router);
 
-router.start(App, '#app');
+router.start(App, 'app');
